@@ -1,0 +1,46 @@
+body 
+  margin: 0
+  padding: 0
+img
+  max-width: 100%
+input, button
+  &:focus
+    outline: none
+@media (min-width: 1200px)
+  .container
+    max-width: 1200px
+@media (min-width: 1200px) and (max-width: 1350px)
+  .header-main_block
+    .container
+      max-width: 1010px
+@media (min-width: 992px) and (max-width: 1200px)
+  .offer-slider__item
+    .container
+      max-width: 900px
+@media (min-width: 768px) and (max-width: 1200px)
+  .offer-slider__item
+    .container
+      max-width: 670px
+@media (min-width: 576px) and (max-width: 768px)
+  .offer-slider__item
+    .container
+      max-width: 500px
+      text-align: center
+@media (min-width: 1px) and (max-width: 576px)
+  .offer-slider__item
+    .container
+      width: 90%
+      text-align: center
+.thead-inverse
+  background-color: #136493
+  color: #fff
+table
+  font-family: 'Roboto', sans-serif
+  font-size: 15px
+  font-weight: 700
+  letter-spacing: 0.3px
+  color: #5e5e5e
+  width: 100%
+.table-bordered
+  th
+    border: 1px solid #0f547c

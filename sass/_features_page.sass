@@ -1,0 +1,53 @@
+.service
+  color: $text-color-dark
+  &-title
+    margin-top: 0
+    margin-bottom: 22px
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.4px
+  &-blocks
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-right: 13px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    // height: 62px
+    background-color: #fff
+    margin: 0
+    padding-top: 19px
+    padding-bottom: 16px
+    padding-left: 18px
+    border: 1px solid rgba(79, 79, 79, 0.02)
+    &:hover
+      background-image: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+      color: $text-color-light
+      border: 1px solid transparent
+      cursor: pointer
+      transition: all 0.1s
+      .on
+        display: none
+      .off
+        display: block
+    &__img
+      margin-right: 22px
+      img
+        max-width: 32px
+        max-height: 30px
+    &__text
+      font-size: 16px
+      font-weight: 400
+      letter-spacing: 0.32px
+    // &_active
+    //   background-image: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+    //   color: $text-color-light
+    //   border: 1px solid transparent
+    //   .on
+    //     display: none
+    //   .off
+    //     display: block

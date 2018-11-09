@@ -1,0 +1,140 @@
+.section
+  &-title  
+    margin-bottom: 55px
+    display: flex
+    justify-content: center
+    text-align: center    
+    width: 100%    
+    &__text
+      margin: 0 32px
+      font-size: 23px
+      font-weight: 700
+      line-height: 24px
+      letter-spacing: 0.46px
+      text-transform: uppercase
+    &__line
+      margin-top: -3px
+    &__message
+      margin-bottom: 43px
+.button
+  font-size: 15px
+  font-weight: 700
+  letter-spacing: 0.3px
+  background-color: $active-color
+  background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+  font-family: 'Roboto', sans-serif
+  border: 2px solid transparent
+  color: $text-color-light
+  padding: 16px 28px
+  border-radius: 30px
+  &:hover
+    background-color: lighten($active-color, 1)
+    background-image: none
+    cursor: pointer
+  &-o
+    padding: 15px 32px
+    background-color: transparent
+    background-image: none
+    color: $text-color-light
+    border: 2px solid #ffffff
+    &:hover
+      background-color: darken(#ffffff, 50)
+      color: $text-color-light
+      border: 2px solid transparent
+  img
+    vertical-align: middle
+  &-search
+    width: 28px
+    height: 28px
+    border-radius: 50%
+    border: none
+    background-color: #0b5e8f
+    background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+    img
+      width: 14px
+      height: 14px
+      vertical-align: middle
+.slider-arrow
+  position: absolute
+  z-index: 99
+  height: 100%
+  &_header
+    top: 0
+    width: 24px
+    &:hover
+      cursor: pointer
+  &__right
+    background: url(../img/slider/arrow-right.png) center no-repeat
+    right: 0
+    margin-right: 25px
+  &__left
+    background: url(../img/slider/arrow-left.png) center no-repeat
+    left: 0
+    margin-left: 25px
+.slick
+  &-dots
+    bottom: 152px
+    li
+      margin: 0
+  &-slider
+    ul
+      li
+        button
+          margin-bottom: 152px
+          width: 14px
+          height: 13px
+          border: 2px solid #ffffff
+          border-radius: 50%
+          &::before
+            color: transparent
+      li.slick-active
+        button
+          width: 14px
+          height: 13px
+          border: 2px solid #246f9b
+          border-radius: 50%
+          background-color: #246f9b
+          &::before
+            color: #246f9b
+.form
+  display: flex
+  justify-content: center
+  padding-bottom: 28px
+  flex-wrap: wrap
+  &-block
+    flex-basis: 50%
+    &__right
+      text-align: left
+    &__left
+      text-align: right
+  &-input
+    width: 337px
+    padding-left: 1px
+    padding-top: 12px
+    padding-bottom: 12px
+    margin-bottom: 29px
+    margin-left: 20px
+    margin-right: 20px
+    background-color: transparent
+    font-family: Roboto
+    color: #303030
+    border: none
+    border-bottom: 1px solid #303030
+    border-radius: none
+    outline: none
+    font-size: 15px
+    font-weight: 700
+    letter-spacing: 0.3px
+    &__img
+      padding-left: 28px
+      background: url(../img/message/form-marker.png) left no-repeat
+  &-small
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: 0.3px
+    color: #303030
+.on
+  display: block
+.off
+  display: none

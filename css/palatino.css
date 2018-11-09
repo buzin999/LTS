@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Palatino Linotype';
+    src: url('../fonts/PalatinoLinotype-Roman.woff2') format('woff2'),
+        url('../fonts/PalatinoLinotype-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

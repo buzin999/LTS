@@ -1,0 +1,196 @@
+.header
+  padding-top: 62px
+  padding-bottom: 39px
+  color: $text-color-light
+  background: #133f58
+  position: relative
+  /* Блоки для слайдера в хэдере */
+  &-bg
+    &_first    
+      position: relative
+      background: #133f58 url(../img/header-bg_ship.jpg) center no-repeat
+      background-size: cover
+      height: 909px
+    &_second
+      position: relative
+      background: #133f58 url(../img/header-bg_car.jpg) center no-repeat
+      background-size: cover
+      height: 909px
+    &_third
+      position: relative
+      background: #133f58 url(../img/header-bg_ship.jpg) center no-repeat
+      background-size: cover
+      height: 909px
+  /* Верхний блок хэдера */
+  &-top
+    position: relative
+    z-index: 99
+    display: flex
+    margin-top: 4px
+    margin-bottom: 45px
+    justify-content: space-between
+    align-items: center
+    &__text
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      flex-basis: 33%
+    &__phone
+      margin-right: 26px
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+    &__logo
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-basis: 33%
+      &::before
+        content: ''
+        position: absolute
+        z-index: 99
+        top: 50%
+        left: 368px
+        height: 2px
+        min-width: 106px
+        background: url(../img/line.png) center no-repeat
+      &::after
+        content: ''
+        position: absolute
+        z-index: 99
+        top: 50%
+        right: 372px
+        height: 2px
+        min-width: 106px
+        background: url(../img/line.png) center no-repeat
+    &__call
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      flex-basis: 33%
+  /* Лого хэдера */
+  &-logo
+    padding-top: 7px
+    text-align: center
+    z-index: 99
+    &__title
+      font-family: 'Palatino Linotype', sans-serif
+      font-size: 60px
+      font-weight: 400
+      line-height: 22px
+      text-transform: uppercase
+    &__sub
+      width: 139px
+      margin-top: 12px
+      font-size: 14px
+      font-weight: 400
+      line-height: 22px
+  /* Меню хэдера */
+  &-menu
+    position: relative
+    display: flex
+    justify-content: center
+    z-index: 99
+    ul
+      margin: 0
+      padding-left: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #ffffff
+      li
+        // display: block
+        position: relative
+        margin-right: 41px
+        cursor: pointer
+        &:hover
+          &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: -5px
+            width: 38px
+            height: 2px
+            background-color: #0b5e8f
+            transition: all 0.2s
+    ul li
+      display: inline-block 
+      cursor: pointer
+      height: 20px
+    ul li a  
+      font-size: 16px
+      font-weight: 700
+      letter-spacing: 0.32px
+    ul button
+      cursor: pointer
+      margin-top: -12px
+  /* Главный блок хэдера */
+  &-main
+    margin: 0
+    outline: none
+    position: absolute
+    height: 909px
+    width: 100%
+    left: 0
+    top: 0
+    color: $text-color-light
+    &_block
+      margin-top: 364px
+    &__title
+      margin-top: 0
+      margin-bottom: 41px
+      font-size: 61px
+      font-weight: 700
+      line-height: 67px
+      letter-spacing: 1.22px
+    &__descr
+      margin-bottom: 37px
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      letter-spacing: 0.32px
+  /* Слайдер в хэдере */
+  &-slider
+    &_bottom
+      height: 100%
+      width: 100%
+/* Скрытие иконки внутри кнопки */
+.hidden
+  &-img
+    display: none
+/* Блок с иконкой сворачивания */
+.gamburger
+  display: none
+  margin-bottom: 10px
+  z-index: 99
+  &-btn
+    display: block
+    position: relative
+    width: 32px
+    height: 28px
+    &_active
+      span
+        background: transparent
+        &::before
+          transform: rotate(135deg)
+          margin-top: 0
+        &::after
+          transform: rotate(-135deg)
+          margin-top: 0
+  &-span, &-span::before, &-span::after
+    display: block
+    position: absolute
+    top: 50%
+    margin-top: -2px
+    left: 50%
+    margin-left: -16px
+    height: 4px
+    width: 32px
+    background-color: $text-color-light
+  &-span::before, &-span::after
+    content: ''
+    transition: all 0.2s
+  &-span::before   
+    margin-top: -9px
+  &-span::after
+    margin-top: 5px
